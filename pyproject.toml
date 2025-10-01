@@ -1,0 +1,10 @@
+[project]
+name = "decide-labelstudio-scripts"
+version = "0.1.0"
+description = "Scripts to interact between labelstudio and triplestore in DECIDe"
+requires-python = ">=3.12"
+dependencies = [
+    "fire>=0.7.1",
+    "label-studio-sdk>=2.0.10",
+    "tqdm>=4.67.1",
+]
