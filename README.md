@@ -14,6 +14,7 @@ visit http://localhost:8080 and signup. After signup you will be automatically l
 Click on your account top-right, and click account & settings. Then chooce Personal Access Token. Create a new token and copy.
 
 ```commandline
+export LABELSTUDIO_TOKEN='<token>'
 ```
 
 ## Importing data
