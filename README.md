@@ -28,7 +28,12 @@ Then, install dependencies:
 ```commandline
 uv sync
 ```
-To import for instance, a datafile from Freiburg
+To import for instance, a JSONL datafile from Freiburg
 ```commandline
 python scripts/import_jsonl.py --file-path=freiburg_decisions_raw.jsonl --project-id=2
+```
+Additionally, the script also supports reading data from a SparQL endpoint (though you may need to edit the query in the script)
+Example of this:
+```commandline
+python scripts/import_jsonl.py --sparql-endpoint='http://localhost:8890/sparql' --project-id=2
 ```
