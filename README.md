@@ -32,8 +32,17 @@ To import for instance, a JSONL datafile from Freiburg
 ```commandline
 python scripts/import_jsonl.py --file-path=freiburg_decisions_raw.jsonl --project-id=2
 ```
-Additionally, the script also supports reading data from a SparQL endpoint (though you may need to edit the query in the script)
+
+Additionally, a script is also supports to read from a SparQL endpoint (though you may need to edit the query in the script) or export back:
 Example of this:
 ```commandline
-python scripts/import_jsonl.py --sparql-endpoint='http://localhost:8890/sparql' --project-id=2
+python scripts/import_sparql.py import
+```
+
+This creates a new project in labelstudio and autocreates the labeling setup based on existing annotations. You can introduce extra labels by
+editing the project labeling setup in labelstudio. Next, you can start to edit and modify the labels.
+
+To export annotations back to SparQL (from project with ID 2)
+```commandline
+python scripts/import_sparql.py export 2
 ```

@@ -6,6 +6,7 @@ requires-python = ">=3.12"
 dependencies = [
     "fire>=0.7.1",
     "label-studio-sdk>=2.0.10",
+    "lxml>=6.0.2",
     "sparqlwrapper>=2.0.0",
     "tqdm>=4.67.1",
 ]

@@ -180,6 +180,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "fire" },
     { name = "label-studio-sdk" },
+    { name = "lxml" },
     { name = "sparqlwrapper" },
     { name = "tqdm" },
 ]
@@ -188,6 +189,7 @@ dependencies = [
 requires-dist = [
     { name = "fire", specifier = ">=0.7.1" },
     { name = "label-studio-sdk", specifier = ">=2.0.10" },
+    { name = "lxml", specifier = ">=6.0.2" },
     { name = "sparqlwrapper", specifier = ">=2.0.0" },
     { name = "tqdm", specifier = ">=4.67.1" },
 ]
